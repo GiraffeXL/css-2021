@@ -1,0 +1,45 @@
+.centerFlex {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 715px; /*how do i center a div vertically and horizontally on any screen regardless of size*/
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    height: 600px;
+    width: 900px;
+    background-color: dimgray;
+    gap: 5px;
+}
+#first-child {
+    background-color: greenyellow;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+div:nth-child(2) {
+    background-color: rgb(255, 116, 139);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+div:nth-child(3) {
+    background-color: rgb(78, 39, 39);
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+div:nth-child(4) {
+    background-color: lightblue;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+div:nth-child(5) {
+    background-color: orange;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+div:nth-child(6) {
+    background-color: blue;
+    grid-column: 3 / 4;
+    grid-row: 1/ 5;
+}
