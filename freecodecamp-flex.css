@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row; /*the arrangement of the flex items within the container*/
+    justify-content: center; /*aligns content along the main axis which for row is the x axis*/
+    align-items: center; /*aligns content along the cross axis which for row is the y axis; in order for this to work
+    the height needs to exceed some of the items - there needs to be an excess of height somewhere;
+    default value of align-items is stretch that's why things stretch to match the height 
+    of the tallest flex item when it's left empty*/
+}
+
+.item {
+    background-color: red;
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+    flex-grow: 1; /*takes up as much space as it can, it could be 100 but would stil look the same*/
+}
+/*flex-grow short hand is just flex*/
+
+.item-1 {
+    order:3;
+    flex: 75%;
+    flex-shrink: 0;
+}
+
+.item-2 {
+ order: 4;
+}
+
+.item-3 {
+    order: 0;
+}
+
+.item-4 {
+    /*align-self: ; align-self aligns items along the cross axis and for row that is the y axis
+    once again there needs to be access height so the item has somewhere to move otherwise things won't appear to have changed*/
+    order: 1;
+}
+/* in order to align a colum flex direction a height larger than that of the items stacked as columns
+in the container needs to be specified; remember when a height isn't specififed it is autoed to the size of the items  */
+
+/* to change the order of a flex item, each item needs it's own selector */
+
+.item-5 {
+    order: 2;
+}
+
+/*order starts at zero not one*/
+/* flex-grow, flex-shrink, flex-basis have a short kand keyword called "flex"*/
+/* flex: grow shrink basis; you declare three values*/
+/*flex-shrink is a bianry property with a value of 1 or 0; 1 meaning the item can shrink at a certain
+point and zero meaning that it won't shrink at a certain point
+It defines the ability for a flex item to shrink if necessary.*/
