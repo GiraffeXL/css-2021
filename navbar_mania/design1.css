@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*this border-box removed the white boarder that typically goes around elements along the edges of the window 
+you can add this space again by putting margin on the container*/
+
+.container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    flex-grow: 1fr; 
+    margin: 20px;
+    justify-content: flex-start;
+    /* padding:10px; */
+}
+
+.item {
+    padding: 20px;
+    margin: 10px;
+    background-color: cadetblue;
+    /* border: 3px solid black; */ /* i took away the border and .item5 stopped going off the edge on the right side when the window shrunk*/
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.item5{
+    margin-left: auto; /* i think this margin left if causing uneven spacing between item 4 and four*/
+    flex-basis: 200px;
+    /* flex-shrink: 1; */
+    /* display: flex;
+    align-items: center; */
+}
+
+#home {
+    padding: 20px;
+    /* margin: 10px; */
+    border: none;
+    /* border: 3px solid blue; */
+    /* border: 3px solid antiquewhite; */
+    flex-grow: 1;
+    flex-shrink: 1;
+} 
+
+
+/* the above #home is centered because i made the item take up the available space 
+and then centered it vis make the item class a display flex and doing align-content center */
+
+
+
