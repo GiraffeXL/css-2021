@@ -19,22 +19,24 @@
 
 .item {
     background-color: red;
+    border: black;
     color: white;
     font-size: 35px;
     padding: 20px;
     margin: 10px;
-    flex-grow: 1; /*takes up as much space as it can, it could be 100 but would stil look the same*/
+    flex-grow: ; /*takes up as much space as it can, it could be 100 but would stil look the same*/
 }
 /*flex-grow short hand is just flex*/
 
 .item-1 {
     order:3;
-    flex: 75%;
+    /* flex: 1; */
     flex-shrink: 0;
 }
 
 .item-2 {
  order: 4;
+ margin-left:auto;
 }
 
 .item-3 {
