@@ -1,0 +1,99 @@
+.page-wrapper {
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: #264653;
+    margin: 0;
+}
+
+    .page1 {
+        /* height: 100vh; for some reason this is longer than my browser window; it might be adding the height along with any padding */
+        height: 90vh;
+    }
+
+        #home-logo {
+            width: 125px;
+            height: 125px;
+            border-radius: 25px;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: row;
+            /* width: 100%; if i un-comment this the nav bar will be longer than the main content part; weird*/ 
+            background-color: #264653;
+            padding:10px;
+            align-items: center;
+            gap: 2%;
+        }
+
+            .title-container a {
+                text-decoration: none;
+                color: #E76F51;
+                font-size: 25px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .title-container a:hover {
+                color: white;
+            }
+
+            .left-links {
+                margin-left: auto;
+            }
+
+        .introduction {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #264653;
+            padding: 10px;
+            height: 85%;
+        }
+
+            .introduction p {
+                font-size: 100px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: white;
+                margin: 0 0 20px 0;
+                font-weight: bold;
+            }
+
+            .introduction button {
+                height: 50px;
+                width: 13%;
+                background-color: #E76F51;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border: 0;
+                border-radius: 10px;
+            }
+
+            .introduction button:hover {
+                color: #E76F51;
+                background-color: white;
+            }
+
+    
+    .page2 {
+         height: 90vh;
+    }
+
+        .about-head {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            margin-top: 7%; /* this margin helped push the div below the fold*/
+            /* background-color: white; */
+        }
+
+        .about-head p {
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #E76F51;
+            font-weight: bold;
+            back
+        }
+    /* for some reason this div isn't taking up the enitre screen/ browser window 
+    nevermind i had a typo in the html*/
