@@ -1,6 +1,7 @@
 .email-wrap {
     width: 600px;
     padding: 20px;
+    /* background-color: #fefae0; */
 }
 
     .banner {
@@ -18,17 +19,70 @@
 
     .title {
         padding: 30px 0px 30px 0px;
-        background-color: #fefae0;
+        background-color: #FFFDF4;
         text-align: center;
     }
 
     article {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: #FFFDF4;
+        padding-bottom: 25px;
     }
 
-        .section-left {
+    /* Try making four rows 2fr 1fr 2fr. place then have the images take up the the 2fr and the 1fr.  */
+
+
+        .item-1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 80%;
+            height: 90%;
+            /* border: -20px solid black; */
+            box-shadow: 5px 5px 30px #b8b8b8;
+        }
+
+        .item-2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            padding: 15%;
+            justify-self: center;
+            font-size: 18px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #BFC4AF;
+            line-height: 160%;
+            display: flex;
+            align-items: center;
+        }
+
+        .item-3 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            width: 85%;
+            height: 90%;
+            box-shadow: 5px 5px 30px #b8b8b8;
+            /* I got this to center by making the div a flexbox and then centering the item, the div is 
+            centered in the html code. Find out how to overlap the images into another grid cell to get that staggered effect 
+            maybe overlap the two divs - find a tutorial then try it: https://www.youtube.com/watch?v=HFG3BKOqOlE&ab_channel=KevinPowell  */
+        }
+
+        .item-4 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            padding: 15%;
+            justify-self: center;
+            font-size: 18px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #BFC4AF;
+            line-height: 160%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* .section-left {
             grid-row: 1/2;
             grid-column: 1/2;
             background-color: #fefae0;
@@ -38,14 +92,14 @@
             line-height: 150%;
             /* height: 250px; */
 
-        }
+        /* } */ 
 
             .section-left p {
                 padding-left: 15px;
                 padding-right: 15px;
             }
 
-        .section-right {
+        /* .section-right {
             grid-row: 1/2;
             grid-column: 2/3;
             background-color: #fefae0;
@@ -55,8 +109,8 @@
             line-height: 150%;
             display: flex;
             flex-direction: column;
-            /* height: 250px; */
-        }
+            /* height: 250px; 
+        } */
 
             .section-right p {
                 padding: 15px;
@@ -65,12 +119,14 @@
 
             .section-right img {
                 order: 2;
+                margin-bottom: 20px;
             }
 
         img {
             height: 300px;
-            width: 100%;
+            width: 90%;
             background-color: #b7c09a;
+            /* justify-self: center; */
         }
 
     .footer {
@@ -92,10 +148,10 @@
         }
 
             .footer-right {
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: Georgia, 'Times New Roman', Times, serif;
                 line-height: 150%;
                 color: #5C5C5C;
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .footer-right button {
@@ -104,6 +160,7 @@
                 height: 50px;
                 border: 0;
                 font-family: Georgia, 'Times New Roman', Times, serif;
+                border-radius: 5%;
             }
         /* .first-p {
             grid-row: ;
